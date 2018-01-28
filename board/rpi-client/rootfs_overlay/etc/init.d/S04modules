@@ -1,0 +1,5 @@
+#!/bin/sh
+
+modprobe snd
+modprobe snd-bcm2835
+
