@@ -3,7 +3,7 @@ Small OS based on Buildroot for SNAPCAST Multiroom audio system
 Actual based on Buildroot 2017.02.9 and snapcast 0.12.0
 
 # Goal
-Goal is to build a fast booting rock solid embedded linux system to run snapcast (http://github.com/badaix/snapcast) on it.
+Goal is to build a fast booting rock solid embedded linux system to run [snapcast](http://github.com/badaix/snapcast) on it.
 Configuration (Hostname, WLAN SSID and Passwort) should be edited user friendly.
 Target Hardware is in as first step the Raspberry Pi Platform for snapclients.
 
@@ -15,7 +15,43 @@ the config files and that's it.
 
 # Build instruction
 
-TODO
+## Download the files
+
+1. Create a working directory (e.g. work) and enter it
+2. Download and extract [Buildroot-2017.02.9](https://buildroot.org/downloads/buildroot-2017.02.9.tar.gz) to 'buildroot-2017.02.9'
+3. Download snapcastos
+```
+work $ git clone http://github.com/jaecksch/snapcastos
+```
+4. Download snapcast
+```
+work $ git clone http://github.com/badaix/snapcast
+```
+5. Download the external for snapcast
+```
+work $ cd snapcast/externals
+externals $ git submodule update --init --recursive
+work $ cd ../..
+```
+## Build the system
+
+1. Prepare building
+```
+work $ cd buildroot-2017.02.9
+buildroot-2017.02.9 $ make BR2_EXTERNAL=../snapcastos:../snapcast/buildroot rpi-client_defconfig
+```
+2. Build the system
+```
+buildroot-2017.02.9 $ make
+```
+Now it takes some time to download all stuff and compile snapcastos.
+The result is stored at
+```
+buildroot-2017.02.9/output/images/snapcastos-rpiclient.zip
+```
+3. Extract the output zip file to a standard SD-Card (root directory)
+4. Edit the file "hostname" and give the client his name in the network
+5. Put the SD-Card to the RaspberryPi and boot into the system. Network is configured via DHCP. snapclient will start automtically
 
 # Roadmap for Client
 
