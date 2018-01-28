@@ -35,11 +35,10 @@ work $ cd ../..
 ```
 ## Build the system
 
-1. Enter the buildroot directory and enter
+1. Prepare building
 ```
 work $ cd buildroot-2017.02.9
-buildroot-2017.02.9 $ make BR2_EXTERNAL=/path/to/work/snapcastos:/path/to/work/snapcast/buildroot
-buildroot-2017.02.9 $ make rpi-client_defconfig
+buildroot-2017.02.9 $ make BR2_EXTERNAL=../snapcastos:../snapcast/buildroot rpi-client_defconfig
 ```
 2. Build the system
 ```
