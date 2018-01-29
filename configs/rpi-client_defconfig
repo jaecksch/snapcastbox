@@ -81,7 +81,7 @@ BR2_PACKAGE_SNAPCAST=y
 
 # Other Packages
 
-BR2_PACKAGE_OPENSSH=y
+#BR2_PACKAGE_OPENSSH=n
 BR2_PACKAGE_NTP=y
 
 # Added for snapcastos
