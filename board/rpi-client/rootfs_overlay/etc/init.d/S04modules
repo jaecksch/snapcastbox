@@ -2,4 +2,5 @@
 
 modprobe snd
 modprobe snd-bcm2835
+modprobe bcm2708-rng
 
