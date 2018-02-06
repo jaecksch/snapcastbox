@@ -1,4 +1,4 @@
-# SnapcastOS
+# SnapcastBox
 Small OS based on Buildroot for SNAPCAST Multiroom audio system
 Actual based on Buildroot 2017.02.9 and snapcast 0.12.0
 
@@ -19,9 +19,9 @@ the config files and that's it.
 
 1. Create a working directory (e.g. work) and enter it
 2. Download and extract [Buildroot-2017.02.9](https://buildroot.org/downloads/buildroot-2017.02.9.tar.gz) to 'buildroot-2017.02.9'
-3. Download snapcastos
+3. Download snapcastbox
 ```
-work $ git clone http://github.com/jaecksch/snapcastos
+work $ git clone http://github.com/jaecksch/snapcastbox
 ```
 4. Download snapcast
 ```
@@ -38,16 +38,16 @@ work $ cd ../..
 1. Prepare building
 ```
 work $ cd buildroot-2017.02.9
-buildroot-2017.02.9 $ make BR2_EXTERNAL=../snapcastos:../snapcast/buildroot rpi-client_defconfig
+buildroot-2017.02.9 $ make BR2_EXTERNAL=../snapcastbox:../snapcast/buildroot rpi-client_defconfig
 ```
 2. Build the system
 ```
 buildroot-2017.02.9 $ make
 ```
-Now it takes some time to download all stuff and compile snapcastos.
+Now it takes some time to download all stuff and compile snapcastbox.
 The result is stored at
 ```
-buildroot-2017.02.9/output/images/snapcastos-rpiclient.zip
+buildroot-2017.02.9/output/images/snapcastbox-rpiclient.zip
 ```
 3. Extract the output zip file to a standard SD-Card (root directory)
 4. Edit the file "hostname" and give the client his name in the network
