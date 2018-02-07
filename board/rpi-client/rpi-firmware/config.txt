@@ -27,3 +27,11 @@ dtparam=audio=on
 
 hdmi_ignore_edid_audio=1
 
+# Tune boot process
+
+boot_delay=0
+disable_splash=1
+avoid_safe_mode=1
+
+
+
