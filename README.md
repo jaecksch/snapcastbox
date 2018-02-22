@@ -1,7 +1,7 @@
 # SnapcastBox
 Small OS based on Buildroot for SNAPCAST Multiroom audio system
-Actual based on Buildroot 2017.10.2 and snapcast 0.12.0
-Currently only Raspberry Pi 1 is supported.
+Actual based on Buildroot 2017.11.2 and snapcast 0.12.0
+Currently only Raspberry Pi 1 and Raspberry Pi Zero W are supported.
 
 # Goal
 Goal is to build a fast booting rock solid embedded linux system to run [snapcast](http://github.com/badaix/snapcast) on it.
