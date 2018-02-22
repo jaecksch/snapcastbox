@@ -1,6 +1,6 @@
 # SnapcastBox
 Small OS based on Buildroot for SNAPCAST Multiroom audio system
-Actual based on Buildroot 2017.02.9 and snapcast 0.12.0
+Actual based on Buildroot 2017.10.2 and snapcast 0.12.0
 Currently only Raspberry Pi 1 is supported.
 
 # Goal
@@ -23,7 +23,7 @@ Download the latest build from the release page or build it by yourself
 # Build instruction
 ## Download the files
 1. Create a working directory (e.g. work) and enter it
-2. Download and extract [Buildroot-2017.02.9](https://buildroot.org/downloads/buildroot-2017.02.9.tar.gz) to 'buildroot-2017.02.9'
+2. Download and extract [Buildroot-2017.11.2](https://buildroot.org/downloads/buildroot-2017.11.2.tar.gz) to 'buildroot-2017.11.2'
 3. Download snapcastbox
 ```
 work $ git clone http://github.com/jaecksch/snapcastbox
@@ -42,20 +42,21 @@ work $ cd ../..
 
 1. Prepare building
 ```
-work $ cd buildroot-2017.02.9
-buildroot-2017.02.9 $ make BR2_EXTERNAL=../snapcastbox:../snapcast/buildroot rpi-client_defconfig
+work $ cd buildroot-2017.11.2
+buildroot-2017.11.2 $ make BR2_EXTERNAL=../snapcastbox:../snapcast/buildroot rpi-client_defconfig
 ```
 2. Build the system
 ```
-buildroot-2017.02.9 $ make
+buildroot-2017.11.2 $ make
 ```
 Now it takes some time to download all stuff and compile snapcastbox.
 The result is stored at
 ```
-buildroot-2017.02.9/output/images/snapcastbox-rpiclient.zip
+buildroot-2017.11.2/output/images/snapcastbox-rpiclient.zip
 ```
 
 # Roadmap for Client
 1. Run on RaspberryPi 1B with analogue output as proof of concept
-2. Add WIFI support
+2. Add WIFI support (Raspberry Pi Zero W)
 3. Enable I2S Based Speaker Driver (HifiBerry MiniAmp)
+4. Build minimal custom kernel
