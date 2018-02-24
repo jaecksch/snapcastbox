@@ -56,7 +56,8 @@ buildroot-2017.11.2/output/images/snapcastbox-rpiclient.zip
 ```
 
 # Roadmap for Client
-1. Run on RaspberryPi 1B with analogue output as proof of concept
-2. Add WIFI support (Raspberry Pi Zero W)
-3. Enable I2S Based Speaker Driver (HifiBerry MiniAmp)
-4. Build minimal custom kernel
+1. [X] Run on RaspberryPi 1B with analogue output as proof of concept
+2. [X] Add WIFI support (Raspberry Pi Zero W)
+3. [ ] Enable I2S Based Speaker Driver (HifiBerry MiniAmp)
+4. [ ] Build minimal custom kernel
+
