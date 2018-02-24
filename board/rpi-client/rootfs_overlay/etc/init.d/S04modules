@@ -1,7 +1,7 @@
 #!/bin/sh
 
-modprobe snd
-modprobe snd-bcm2835
-modprobe bcm2708-rng
-modprobe 8192cu
+#modprobe snd
+#modprobe snd-bcm2835
+#modprobe bcm2708-rng
+#modprobe 8192cu
 
