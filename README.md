@@ -30,7 +30,7 @@ work $ git clone http://github.com/jaecksch/snapcastbox
 ```
 4. Download snapcast
 ```
-work $ git clone http://github.com/badaix/snapcast
+work $ git clone -b v0.12.0 http://github.com/badaix/snapcast
 ```
 5. Download the external for snapcast
 ```
