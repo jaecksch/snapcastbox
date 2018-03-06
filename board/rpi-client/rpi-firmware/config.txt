@@ -19,19 +19,9 @@ gpu_mem_256=100
 gpu_mem_512=100
 gpu_mem_1024=100
 
-# Enable audio (loads snd_bcm2835)
-
-dtparam=audio=on
-
-# Analogue audio
-
-hdmi_ignore_edid_audio=1
-
 # Tune boot process
 
 boot_delay=0
 disable_splash=1
 avoid_safe_mode=1
-
-
 
