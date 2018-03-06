@@ -1,2 +1,22 @@
+choice
+	prompt "Raspberry Pi Audio Output"
+	default SNAPCASTBOX_ANALOGUE
+	help
+	  Set audio output for snapcast
 
+config SNAPCASTBOX_ANALOGUE
+	bool "Analogue Output"
+	help
+	  Selects analogue output
+
+config SNAPCASTBOX_HDMI
+	bool "HMDI audio output"
+	help
+	  Selects HDMI Output
+
+config SNAPCASTBOX_HB_MINIAMP
+	bool "Hifiberry Miniamp"
+	help
+	  Selects I2S Output for Hifiberry MiniAmp
+endchoice
 
