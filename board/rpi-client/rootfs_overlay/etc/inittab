@@ -20,8 +20,8 @@
 ::sysinit:/bin/mkdir -p /dev/shm
 ::sysinit:/bin/mount -r /dev/mmcblk0p1 /boot
 ::sysinit:/bin/mount -a
-#::sysinit:/bin/hostname -F /etc/hostname
-::sysinit:/bin/hostname -F /boot/hostname
+::sysinit:/bin/snapcastbox.sh
+::sysinit:/bin/hostname -F /etc/hostname
 
 # now run any rc scripts
 ::sysinit:/etc/init.d/rcS

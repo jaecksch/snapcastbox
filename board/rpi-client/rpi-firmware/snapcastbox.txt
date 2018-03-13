@@ -1,0 +1,9 @@
+# Config File for snapcastbox
+#
+# Comments start with #
+
+HOSTNAME="snapcastbox"
+
+SSID="Test"
+PSK="Test"
+
