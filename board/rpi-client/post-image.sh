@@ -42,10 +42,7 @@ dtoverlay=hifiberry-dac
 __EOF__
 fi
 
-cp "${BR2_EXTERNAL_SNAPCASTBOX_PATH}/board/rpi-client/rpi-firmware/wpa_supplicant.conf" "${GENIMAGE_TMP}"
-#cp "${BINARIES_DIR}/rpi-firmware/fixup.dat" "${GENIMAGE_TMP}"
-#cp "${BINARIES_DIR}/rpi-firmware/start.elf" "${GENIMAGE_TMP}"
-echo snapcastbox >"${GENIMAGE_TMP}/hostname"
+cp "${BR2_EXTERNAL_SNAPCASTBOX_PATH}/board/rpi-client/rpi-firmware/snapcastbox.txt" "${GENIMAGE_TMP}"
 cp "${BINARIES_DIR}/zImage" "${GENIMAGE_TMP}"
 cd "${GENIMAGE_TMP}"
 test ! -f "${BINARIES_DIR}/snapcastbox-rpiclient.zip" || rm "${BINARIES_DIR}/snapcastbox-rpiclient.zip"
