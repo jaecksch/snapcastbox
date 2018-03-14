@@ -92,6 +92,11 @@ BR2_PACKAGE_RNG_TOOLS=y
 BR2_PACKAGE_IW=y
 BR2_PACKAGE_WPA_SUPPLICANT=y
 
+# Parameters of snapcastbox
+
+SNAPCASTBOX_HB_MINIAMP=y
+
+
 # Added for snapcastbox
 
 BR2_ROOTFS_OVERLAY="$(BR2_EXTERNAL_SNAPCASTBOX_PATH)/board/rpi-client/rootfs_overlay"
