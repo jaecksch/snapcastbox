@@ -27,6 +27,9 @@
 # now run any rc scripts
 ::sysinit:/etc/init.d/rcS
 
+# Start Remote Control Programm
+tty1::respawn:/snapremote.py
+
 # Put a getty on the serial port
 #ttyAMA0::respawn:/sbin/getty -L  console 0 vt100 # GENERIC_SERIAL
 #tty1::respawn:/sbin/getty -L  tty1 0 vt100 # Login console on tty1

@@ -19,4 +19,9 @@ config SNAPCASTBOX_HB_MINIAMP
 	help
 	  Selects I2S Output for Hifiberry MiniAmp
 endchoice
+config SNAPCASTBOX_LIRC
+	bool "Enable LIRC Hardware"
+	help
+	  Enables LIRC hardware driver
+
 

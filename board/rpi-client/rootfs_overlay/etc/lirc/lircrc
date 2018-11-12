@@ -1,0 +1,26 @@
+begin
+	remote = WD_TV_LIVE_REMOTE
+	button = KEY_UP     # what button is pressed on the remote
+	prog = test         # program to handle this command
+	config = volup      # configs are given to program as list
+end
+
+begin
+	button = KEY_DOWN    # what button is pressed on the remote
+	prog = test         # program to handle this command
+	config = voldown     # configs are given to program as list
+end
+
+begin
+	button = KEY_OK     # what button is pressed on the remote
+	prog = test         # program to handle this command
+	config = volmute    # configs are given to program as list
+end
+
+begin
+    button = KEY_POWER
+    prog = irexec
+    config = sudo shutdown now
+end
+
+

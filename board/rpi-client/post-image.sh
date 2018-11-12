@@ -42,6 +42,17 @@ dtoverlay=hifiberry-dac
 __EOF__
 fi
 
+if grep -q SNAPCASTBOX_LIRC=y "${BR2_CONFIG}"; then
+	
+echo "Adding LIRC to config.txt."
+cat << __EOF__ >> "${GENIMAGE_TMP}/config.txt"
+
+# LIRC
+
+dtoverlay=lirc-rpi,gpio_in_pin=18,gpio_in_pull=off
+__EOF__
+fi
+
 cp "${BR2_EXTERNAL_SNAPCASTBOX_PATH}/board/rpi-client/rpi-firmware/snapcastbox.txt" "${GENIMAGE_TMP}"
 cp "${BINARIES_DIR}/zImage" "${GENIMAGE_TMP}"
 cd "${GENIMAGE_TMP}"
