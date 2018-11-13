@@ -49,7 +49,7 @@ cat << __EOF__ >> "${GENIMAGE_TMP}/config.txt"
 
 # LIRC
 
-dtoverlay=lirc-rpi,gpio_in_pin=18,gpio_in_pull=off
+dtoverlay=lirc-rpi,gpio_in_pin=4,gpio_in_pull=off
 __EOF__
 fi
 
