@@ -28,11 +28,11 @@
 ::sysinit:/etc/init.d/rcS
 
 # Start Remote Control Programm
-tty1::respawn:/snapremote.py
+#tty1::respawn:/bin/snapremote.py
 
 # Put a getty on the serial port
 #ttyAMA0::respawn:/sbin/getty -L  console 0 vt100 # GENERIC_SERIAL
-#tty1::respawn:/sbin/getty -L  tty1 0 vt100 # Login console on tty1
+tty1::respawn:/sbin/getty -L  tty1 0 vt100 # Login console on tty1
 #tty2::respawn:/sbin/getty -L  tty2 0 vt100 # Login console on tty2
 
 # Stuff to do for the 3-finger salute

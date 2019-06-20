@@ -2,5 +2,5 @@
 
 # Copy hostmane to etc to be consistent (hostname comes from /boot/hostname)
 
-cp /boot/hostname /etc/hostname
+#cp /boot/hostname /etc/hostname
  
